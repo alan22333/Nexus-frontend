@@ -1,0 +1,542 @@
+/* 新拟态设计样式 */
+
+/* 基础新拟态阴影 */
+.shadow-neumorphism {
+  box-shadow: 
+    8px 8px 16px rgba(163, 177, 198, 0.6),
+    -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+/* 按压状态的新拟态阴影 */
+.shadow-neumorphism-pressed {
+  box-shadow: 
+    inset 4px 4px 8px rgba(163, 177, 198, 0.6),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 内凹新拟态阴影 */
+.shadow-neumorphism-inset {
+  box-shadow: 
+    inset 6px 6px 12px rgba(163, 177, 198, 0.4),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+/* 小尺寸新拟态阴影 */
+.shadow-neumorphism-small {
+  box-shadow: 
+    4px 4px 8px rgba(163, 177, 198, 0.5),
+    -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+/* 大尺寸新拟态阴影 */
+.shadow-neumorphism-large {
+  box-shadow: 
+    12px 12px 24px rgba(163, 177, 198, 0.7),
+    -12px -12px 24px rgba(255, 255, 255, 0.9);
+}
+
+/* 悬浮效果 */
+.shadow-neumorphism-float {
+  box-shadow: 
+    10px 10px 20px rgba(163, 177, 198, 0.8),
+    -10px -10px 20px rgba(255, 255, 255, 1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* 卡片样式 */
+.neumorphism-card {
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 
+    20px 20px 40px rgba(148, 163, 184, 0.4),
+    -20px -20px 40px rgba(255, 255, 255, 0.9);
+}
+
+/* 输入框样式 */
+.neumorphism-input {
+  background: #f8fafc;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 
+    inset 6px 6px 12px rgba(148, 163, 184, 0.3),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.neumorphism-input:focus {
+  outline: none;
+  box-shadow: 
+    inset 8px 8px 16px rgba(163, 177, 198, 0.5),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.8),
+    0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* 按钮样式 */
+.neumorphism-button {
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 
+    6px 6px 12px rgba(148, 163, 184, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+.neumorphism-button:hover {
+  box-shadow: 
+    8px 8px 16px rgba(148, 163, 184, 0.5),
+    -8px -8px 16px rgba(255, 255, 255, 1);
+}
+
+.neumorphism-button:active {
+  box-shadow: 
+    inset 4px 4px 8px rgba(148, 163, 184, 0.4),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  transform: scale(0.98);
+}
+
+/* 主要按钮样式 */
+.neumorphism-button-primary {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 
+    6px 6px 12px rgba(59, 130, 246, 0.4),
+    -6px -6px 12px rgba(147, 197, 253, 0.6);
+}
+
+.neumorphism-button-primary:hover {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  box-shadow: 
+    8px 8px 16px rgba(59, 130, 246, 0.5),
+    -8px -8px 16px rgba(147, 197, 253, 0.7);
+}
+
+.neumorphism-button-primary:active {
+  box-shadow: 
+    inset 4px 4px 8px rgba(29, 78, 216, 0.6),
+    inset -4px -4px 8px rgba(59, 130, 246, 0.4);
+  transform: scale(0.98);
+}
+
+/* 侧边栏样式 */
+.neumorphism-sidebar {
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+  box-shadow: 
+    inset -1px 0 0 rgba(255, 255, 255, 0.1),
+    8px 0 16px rgba(163, 177, 198, 0.3);
+}
+
+/* 导航项样式 */
+.neumorphism-nav-item {
+  background: transparent;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 4px 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.neumorphism-nav-item:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    4px 4px 8px rgba(163, 177, 198, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.6);
+}
+
+.neumorphism-nav-item.active {
+  background: rgba(59, 130, 246, 0.1);
+  box-shadow: 
+    inset 3px 3px 6px rgba(163, 177, 198, 0.3),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.6);
+  color: #3b82f6;
+}
+
+/* 内容区域样式 */
+.neumorphism-content {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  min-height: 100vh;
+}
+
+/* 帖子卡片样式 */
+.neumorphism-post-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 
+    12px 12px 24px rgba(163, 177, 198, 0.4),
+    -12px -12px 24px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.neumorphism-post-card:hover {
+  box-shadow: 
+    16px 16px 32px rgba(163, 177, 198, 0.5),
+    -16px -16px 32px rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* 标签样式 */
+.neumorphism-tag {
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  box-shadow: 
+    4px 4px 8px rgba(148, 163, 184, 0.25),
+    -4px -4px 8px rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.neumorphism-tag:hover {
+  box-shadow: 
+    6px 6px 12px rgba(148, 163, 184, 0.3),
+    -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+.neumorphism-tag.active {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  color: white;
+  box-shadow: 
+    4px 4px 8px rgba(59, 130, 246, 0.4),
+    -4px -4px 8px rgba(147, 197, 253, 0.6);
+}
+
+/* 搜索框样式 */
+.neumorphism-search {
+  background: #f8fafc;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  width: 100%;
+  box-shadow: 
+    inset 8px 8px 16px rgba(163, 177, 198, 0.3),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.neumorphism-search:focus {
+  outline: none;
+  box-shadow: 
+    inset 10px 10px 20px rgba(163, 177, 198, 0.4),
+    inset -10px -10px 20px rgba(255, 255, 255, 0.8),
+    0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* 小按钮样式 */
+.neumorphism-button-small {
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 
+    4px 4px 8px rgba(148, 163, 184, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+.neumorphism-button-small:hover {
+  box-shadow: 
+    6px 6px 12px rgba(148, 163, 184, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+.neumorphism-button-small:active {
+  box-shadow: 
+    inset 3px 3px 6px rgba(148, 163, 184, 0.3),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  transform: scale(0.98);
+}
+
+/* 内凹样式 */
+.neumorphism-inset {
+  background: #f1f5f9;
+  border-radius: 12px;
+  box-shadow: 
+    inset 4px 4px 8px rgba(148, 163, 184, 0.3),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 深色模式样式 */
+.dark {
+  /* 基础阴影 - 深色模式 */
+  --shadow-neumorphism: 
+    12px 12px 24px rgba(0, 0, 0, 0.4),
+    -12px -12px 24px rgba(255, 255, 255, 0.05);
+  
+  /* 按压阴影 - 深色模式 */
+  --shadow-neumorphism-pressed: 
+    inset 8px 8px 16px rgba(0, 0, 0, 0.4),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.05);
+  
+  /* 内凹阴影 - 深色模式 */
+  --shadow-neumorphism-inset: 
+    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-card {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  color: #e5e7eb;
+  box-shadow: 
+    20px 20px 40px rgba(0, 0, 0, 0.4),
+    -20px -20px 40px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-button {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  color: #e5e7eb;
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-button:hover {
+  box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.5),
+    -8px -8px 16px rgba(255, 255, 255, 0.08);
+}
+
+.dark .neumorphism-button-small {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  color: #e5e7eb;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-button-small:hover {
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.5),
+    -6px -6px 12px rgba(255, 255, 255, 0.08);
+}
+
+.dark .neumorphism-search {
+  background: #374151;
+  color: #e5e7eb;
+  box-shadow: 
+    inset 8px 8px 16px rgba(0, 0, 0, 0.4),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-search::placeholder {
+  color: #9ca3af;
+}
+
+.dark .neumorphism-search:focus {
+  box-shadow: 
+    inset 10px 10px 20px rgba(0, 0, 0, 0.5),
+    inset -10px -10px 20px rgba(255, 255, 255, 0.08),
+    0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.dark .neumorphism-sidebar {
+  background: linear-gradient(180deg, #374151, #1f2937);
+  box-shadow: 
+    inset -1px 0 0 rgba(255, 255, 255, 0.05),
+    8px 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.dark .neumorphism-nav-item {
+  color: #e5e7eb;
+}
+
+.dark .neumorphism-nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-nav-item.active {
+  background: rgba(59, 130, 246, 0.2);
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.3),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.05);
+  color: #60a5fa;
+}
+
+.dark .neumorphism-content {
+  background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.dark .neumorphism-post-card {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  box-shadow: 
+    12px 12px 24px rgba(0, 0, 0, 0.4),
+    -12px -12px 24px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-post-card:hover {
+  box-shadow: 
+    16px 16px 32px rgba(0, 0, 0, 0.5),
+    -16px -16px 32px rgba(255, 255, 255, 0.08);
+}
+
+.dark .neumorphism-tag {
+  background: linear-gradient(145deg, #4b5563, #374151);
+  color: #e5e7eb;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-tag:hover {
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.08);
+}
+
+.dark .neumorphism-inset {
+  background: #1f2937;
+  color: #e5e7eb;
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.4),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* 深色模式下的文字颜色 */
+.dark {
+  color: #e5e7eb;
+}
+
+.dark .text-gray-800 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-700 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-600 {
+  color: #9ca3af !important;
+}
+
+.dark .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.dark .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark .placeholder-gray-500::placeholder {
+  color: #6b7280 !important;
+}
+
+.dark .placeholder-gray-400::placeholder {
+  color: #9ca3af !important;
+}
+
+/* 深色模式下的边框颜色 */
+.dark .border-gray-200 {
+  border-color: #374151 !important;
+}
+
+.dark .border-gray-300 {
+  border-color: #4b5563 !important;
+}
+
+/* 模块介绍页面样式 */
+.neumorphism-tag {
+  background: linear-gradient(145deg, #f9fafb, #e5e7eb);
+  border-radius: 20px;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.neumorphism-button-small {
+  background: linear-gradient(145deg, #f9fafb, #e5e7eb);
+  box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    -2px -2px 4px rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.neumorphism-button-primary {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  box-shadow: 
+    6px 6px 12px rgba(59, 130, 246, 0.3),
+    -6px -6px 12px rgba(147, 197, 253, 0.3);
+  transition: all 0.2s ease;
+}
+
+.neumorphism-button-primary:hover {
+  box-shadow: 
+    3px 3px 6px rgba(59, 130, 246, 0.4),
+    -3px -3px 6px rgba(147, 197, 253, 0.4);
+  transform: translateY(-1px);
+}
+
+.neumorphism-button-primary:active {
+  box-shadow: 
+    inset 2px 2px 4px rgba(37, 99, 235, 0.3),
+    inset -2px -2px 4px rgba(147, 197, 253, 0.2);
+  transform: translateY(0);
+}
+
+/* 深色模式下的模块介绍样式 */
+.dark .neumorphism-tag {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  color: #f59e0b;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-button-small {
+  background: linear-gradient(145deg, #374151, #1f2937);
+  color: #3b82f6;
+  box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.4),
+    -2px -2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.dark .neumorphism-button-primary {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.4),
+    -6px -6px 12px rgba(59, 130, 246, 0.1);
+}
+
+.dark .neumorphism-button-primary:hover {
+  box-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.5),
+    -3px -3px 6px rgba(59, 130, 246, 0.15);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .shadow-neumorphism {
+    box-shadow: 
+      6px 6px 12px rgba(163, 177, 198, 0.5),
+      -6px -6px 12px rgba(255, 255, 255, 0.7);
+  }
+  
+  .neumorphism-card {
+    padding: 16px;
+    box-shadow: 
+      12px 12px 24px rgba(163, 177, 198, 0.5),
+      -12px -12px 24px rgba(255, 255, 255, 0.7);
+  }
+  
+  .neumorphism-post-card {
+    padding: 16px;
+    margin: 12px 0;
+    box-shadow: 
+      8px 8px 16px rgba(163, 177, 198, 0.4),
+      -8px -8px 16px rgba(255, 255, 255, 0.7);
+  }
+}
