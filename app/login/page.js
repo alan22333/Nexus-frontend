@@ -40,28 +40,7 @@ export default function Login() {
     setError('');
 
     try {
-      // 在开发阶段，使用模拟数据进行登录
-      if (process.env.NODE_ENV === 'development' && false) { // 修改条件，尝试连接后端
-        // 简单的模拟登录逻辑
-        if (identifier && password) {
-          // 模拟成功登录
-          const mockUser = {
-            id: 1,
-            username: identifier.includes('@') ? identifier.split('@')[0] : identifier,
-            email: identifier.includes('@') ? identifier : `${identifier}@example.com`,
-          };
-          const mockToken = 'mock-jwt-token-' + Date.now();
-          
-          // 使用 AuthContext 的 login 函数
-          login(mockUser, mockToken);
-          router.push('/');
-        } else {
-          setError('Please enter both identifier and password');
-        }
-        return;
-      }
-      
-      // 实际API调用（当后端准备好时使用）
+      // 使用真实API进行登录
       const response = await userApi.login(identifier, password);
       if (response.code === 0 && response.data) {
         login(response.data.user, response.data.token);
